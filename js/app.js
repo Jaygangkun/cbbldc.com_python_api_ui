@@ -15,7 +15,7 @@
             }
 
             if($('[name="logz"]').val() == '') {
-                alert('Please Input Logz');
+                alert('Please Input [Fe/H]');
                 $('[name="logz"]').focus();
                 return;
             }
