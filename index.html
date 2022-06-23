@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+	<style type="text/css">
+	.auto-style1 {
+		font-family: Calibri;
+	}
+	.auto-style2 {
+		text-align: right;
+	}
+	</style>
+</head>
+<body style="margin-left: 12px; margin-right: 12px">
+    <div class="container mt-5">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">Title</h1>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-text" id="logg">Log(g)</span>
+                    <input type="number" class="form-control" name="logg" value="" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-text" id="teff">Teff</span>
+                    <input type="number" class="form-control" name="teff" value="" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="input-group">
+                    <span class="input-group-text" id="logz">[Fe/H]</span>
+                    <input type="number" class="form-control" name="logz" value="" autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <div id="res_message" class="mt-3">
+            <div class="alert alert-danger" role="alert" style="display: none"></div>
+            <div class="alert alert-success" role="alert" style="display: none"></div>
+        </div>
+
+        <div class="row mt-3">
+            <button type="button" class="btn btn-primary w-50 m-auto" id="btn_calc">Submit</button>
+        </div>
+    </div>
+	<table style="width: 100%" cellpadding="2" cellspacing="1">
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td>
+			<span style="color: rgb(0, 0, 0); font-family: Calibri; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+			Copyright � 2022 Ed Mullen&nbsp;&nbsp;&nbsp; </span></td>
+			<td class="auto-style2">
+			<span class="auto-style1" style="color: rgb(32, 31, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+			LDC values based on ATLAS (Kurucz) models provided by Dr. Anthony 
+			Claret</span></td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><span class="auto-style1">
+			<a href="https://exo.mast.stsci.edu/" target="_blank">Obtain 
+			parameters by exoplanet name from EXO-MAST</a></span> </td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="auto-style1"><br>Example:</td>
+			<td class="auto-style1">&nbsp;</td>
+		</tr>
+		<tr>
+			<td><img height="346" src="exo-MAST%20example.png" width="503"></td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</body>
