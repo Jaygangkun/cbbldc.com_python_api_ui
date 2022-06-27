@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="js/app-test.js"></script>
+	<style type="text/css">
+	.auto-style1 {
+		font-family: Calibri;
+	}
+	.auto-style2 {
+		text-align: right;
+	}
+	.auto-style3 {
+	font-size: x-large;
+}
+.auto-style5 {
+	font-family: Calibri;
+	text-align: center;
+}
+	.auto-style6 {
+	color: rgb(255, 255, 255);
+}
+	</style>
+</head>
+<body style="margin-left: 12px; margin-right: 12px">
+    <div class="container mt-5">
+		<div class="row">
+			<div class="col-12">
+				<h1 class="text-center">CBBLDC(TEST) : <span class="auto-style3">
+				Power-2 Stellar Limb Darkening Coefficients for CBB Filter</span></h1>
+				<p class="text-center">RANGE - Log(g) : 0.00 to 5.00 , Teff : 
+				3500 to 40000 , [Fe/H] : -5.0 to 1.0</p>
+				<p class="text-center">&nbsp;</p>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="logg">Log(g)</span>
+                    <input type="number" class="form-control" name="logg" value="" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="teff">Teff</span>
+                    <input type="number" class="form-control" name="teff" value="" autocomplete="off">
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="logz">[Fe/H]</span>
+                    <input type="number" class="form-control" name="logz" value="" autocomplete="off">
+                </div>
+            </div>
+
+			<div class="col-3">
+                <div class="input-group">
+                    <span class="input-group-text" id="vel">Vel</span>
+                    <input type="number" class="form-control" name="vel" value="" autocomplete="off">
+                </div>
+            </div>
+        </div>
+
+        <div id="res_message" class="mt-3">
+            <div class="alert alert-danger" role="alert" style="display: none"></div>
+            <div class="alert alert-success" role="alert" style="display: none"></div>
+        </div>
+
+        <div class="row mt-3">
+            <button type="button" class="btn btn-primary w-25 m-auto" id="btn_calc">Power-2</button>
+			<button type="button" class="btn btn-primary w-25 m-auto" id="btn_calc2">Quadratic</button>
+        </div>
+    </div>
+	<table style="width: 100%" cellpadding="2" cellspacing="1">
+		<tr>
+			<td colspan="2">&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td>
+			<span style="font-family: Calibri; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;" class="auto-style6">
+			Copyright � 2022 Ed Mullen</span><span style="color: rgb(0, 0, 0); font-family: Calibri; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">&nbsp;&nbsp;&nbsp; </span></td>
+			<td class="auto-style2">
+			<span class="auto-style1" style="color: rgb(32, 31, 30); font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+			Power-2 LDC values provided by Dr. Anthony 
+			Claret</span></td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td><span class="auto-style1">
+			<a href="https://exo.mast.stsci.edu/" target="_blank">Obtain 
+			parameters by exoplanet name from EXO-MAST</a></span> </td>
+			<td class="auto-style5">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="auto-style1"><br></td>
+			<td class="auto-style5">&nbsp;</td>
+		</tr>
+		<tr>
+			<td>
+			<span style="color: rgb(0, 0, 0); font-family: Calibri; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">
+			<a href="CBB-Filter-Advantages.pdf" target="_blank">Analysis of CBB 
+			filter for exoplanet differential photometry</a></span></td>
+			<td>&nbsp;&nbsp; &nbsp;</td>
+		</tr>
+		<tr>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+		</tr>
+	</table>
+</body>
