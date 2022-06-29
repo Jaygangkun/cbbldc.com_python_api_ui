@@ -20,6 +20,12 @@
                 return;
             }
 
+            if($('[name="vel"]').val() == '') {
+                alert('Please Input Vel');
+                $('[name="vel"]').focus();
+                return;
+            }
+
             $('#res_message .alert').hide();
 
             $.ajax({
@@ -29,7 +35,8 @@
                 data: {
                     logg: $('[name="logg"]').val(),
                     teff: $('[name="teff"]').val(),
-                    logz: $('[name="logz"]').val()
+                    logz: $('[name="logz"]').val(),
+                    vel: $('[name="vel"]').val()
                 },
                 dataType: 'json',
                 success: function(res) {
@@ -65,6 +72,12 @@
                 return;
             }
 
+            if($('[name="vel"]').val() == '') {
+                alert('Please Input Vel');
+                $('[name="vel"]').focus();
+                return;
+            }
+
             $('#res_message .alert').hide();
 
             $.ajax({
@@ -74,7 +87,8 @@
                 data: {
                     logg: $('[name="logg"]').val(),
                     teff: $('[name="teff"]').val(),
-                    logz: $('[name="logz"]').val()
+                    logz: $('[name="logz"]').val(),
+                    vel: $('[name="vel"]').val()
                 },
                 dataType: 'json',
                 success: function(res) {
